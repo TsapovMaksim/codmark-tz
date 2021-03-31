@@ -1,0 +1,86 @@
+@import '~normalize.css';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  &--red {
+    background-color: red;
+  }
+  &--blue {
+    background-color: blue;
+  }
+  &--green {
+    background-color: green;
+  }
+}
+
+.input-tag {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.row-button {
+  margin-right: 10px;
+}
+
+.alert {
+  position: absolute;
+  background-color: #cce5ff;
+  padding: 20px;
+  &-enter {
+    opacity: 0;
+    scale: 0.9;
+  }
+  &-enter-active {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+  }
+  &-exit {
+    opacity: 1;
+  }
+  &-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }
+  &__text {
+    margin-bottom: 10px;
+  }
+}
+
+.form-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.images {
+  width: 1200px;
+  margin: 0 auto;
+  &__group {
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  &__group-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+    padding-left: 15px;
+  }
+  img {
+    margin-right: 10px;
+  }
+}
